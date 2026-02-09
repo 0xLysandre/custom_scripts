@@ -18,4 +18,15 @@ def str_to_mac(address:str):
     
     return ''.join(list_str_mac_address)
 
-print(str_to_mac('24-EC-99-CA-D8-88'))
+if __name__ == '__main__':
+    while True:
+        ask_usr_command = int(input("[1] str to mac\n[99] Exit\n    >>  "))
+        if (ask_usr_command == 1):
+            ask_usr_str = input("[+] Input str to convert to mac address : ")
+            ___ =  str_to_mac(ask_usr_str)
+            print(___)
+        if (ask_usr_command == 99):
+            print("Goodbye friend !\n")
+            break
+        else:
+            print("Uh oh... What did you even try to type ?\n")
