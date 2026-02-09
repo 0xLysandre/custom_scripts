@@ -25,6 +25,7 @@ if __name__ == '__main__':
             ask_usr_str = input("[+] Input str to convert to mac address : ")
             ___ =  str_to_mac(ask_usr_str)
             print(___)
+            continue
         if (ask_usr_command == 99):
             print("Goodbye friend !\n")
             break
